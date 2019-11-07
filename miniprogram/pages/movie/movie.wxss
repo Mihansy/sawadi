@@ -1,0 +1,47 @@
+/* pages/base/base.wxss */
+.title {
+  font-size: 18px;
+  border-left: 3px solid orange;
+  padding-left: 14px;
+  line-height: 2.5;
+}
+.movie {
+  height: 248rpx;
+  margin: 0 16px;
+  display: flex;
+  padding: 16px 0; 
+  border-bottom: 1px solid #dfdfdf;
+}
+.movie-img {
+  display: block;
+  width: 200rpx;
+  height: 100%;
+}
+.movie-info {
+  flex: 1;
+  margin-left: 16px;
+}
+.name {
+  font-size: 16px;
+}
+.desc {
+  height: 36px;
+  font-size: 14px;
+  color: #666;
+  margin: 6px 0;
+  overflow: hidden;
+}
+.like {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+text {
+  margin-right: 16px;
+}
+.comment {
+  background-color: orange;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}

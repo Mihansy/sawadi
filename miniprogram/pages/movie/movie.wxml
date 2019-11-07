@@ -1,0 +1,14 @@
+<view class="title">热播电影</view>
+<view wx:for="{{movieList}}" wx:key="{{index}}" wx:if="{{movieList.length}}" class="movie">
+  <image src="{{item.profile_image}}" class="movie-img"></image>
+  <view class="movie-info">
+    <view class="name">{{item.name}}</view>
+    <view class="desc">{{item.text}}</view>
+    <view class="like">
+      <text class="love">喜欢：{{item.love}}</text>
+      <text class="hate">不喜欢：{{item.hate}}</text>
+    </view>
+    <button bindtap="toComment" data-themeid="{{item.theme_id}}" class="comment">详情</button>
+  </view>
+</view>
+

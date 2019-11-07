@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<view wx:for="{{detailList}}" wx:key="{{index}}" class="detail-list">
+  <view class="title">{{item.text}}</view>
+  <image src="{{item.cdn_img}}" class="img1"></image>
+  <image class="img2" wx:if="{{item.profile_img}}" src="{{item.profile_img}}"></image>
+  <video wx:if="{{item.videouri}}"  src="{{item.videouri}}"></video>
+  <view class="info">分享者：{{item.name}} 评论：{{item.comment}} </view>
+  <view class="info">时间：{{item.created_at}} 主题：{{item.theme_name}}</view>
+</view>
